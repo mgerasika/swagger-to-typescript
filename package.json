@@ -49,7 +49,7 @@
         "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts,tsx}'",
         "lint:fix": "tsc --noEmit && eslint --fix 'src/**/*.{js,ts,tsx}'",
         "test": "jest --config=jest.config.js",
-        "pub": "git add . && git commit -am 'Pre release' && git push origin HEAD && npm version patch && yarn build && npm publish"
+        "pub": "git add . && git commit -am 'Pre release' && git push origin HEAD &&  yarn build && npm version patch && npm publish"
     },
     "husky": {
         "hooks": {
