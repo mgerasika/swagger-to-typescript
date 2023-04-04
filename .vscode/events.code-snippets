@@ -1,0 +1,52 @@
+{
+	// Place your events-3 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+
+	"create action": {
+		"prefix": "create action",
+		"body": [
+			"export const ${1:ACTION_NAME} = \"${1:ACTION_NAME}\";",
+			"export function ${2:functionName} (${3:arg}: ${4:ArgType}): Action {",
+			"\treturn {",
+			"\t\ttype: ${1:ACTION_NAME},",
+			"\t\tpayload: ${3:arg}",
+			"\t\\};",
+			"\\}"
+		]
+	},
+	"create async action": {
+		"prefix": "create async action",
+		"body": [
+			"export const ${1:ACTION_NAME} = \"${1:ACTION_NAME}\";",
+			"export function ${2:functionName} (${3:arg}: ${4:ArgType}): AsyncAction {",
+			"\treturn {",
+			"\t\ttype: ${1:ACTION_NAME},",
+			"\t\tpromise: ${5:PromiseName}(${3:arg})",
+			"\t\\};",
+			"\\}"
+		]
+	},
+	"create reducer case": {
+		"prefix": "create reducer case",
+		"body": [
+			"case ${1:ACTION_NAME}: {",
+			"\treturn {",
+			"\t\t...state,", 
+			"\t\t${2:variableName}: action.payload",
+			"\t\\};",
+			"\\}"
+		]
+	},
+	"text handler": {
+		"prefix": "text handler",
+		"body": [
+			"function ${1:functionName}({target: { value }}: React.ChangeEvent<HTMLInputElement>) {",
+			"\t${2}",
+			"}"
+		]
+	}
+}

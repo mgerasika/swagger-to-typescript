@@ -1,0 +1,52 @@
+{
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	},
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "react-hooks", "@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-empty-function": "warn",
+		"react/react-in-jsx-scope": "off",
+		"react/no-unescaped-entities": "off",
+		"no-extra-boolean-cast": "warn",
+		"no-empty-pattern": "warn",
+		"prefer-const": "warn",
+		"react-hooks/exhaustive-deps": "warn",
+		"@typescript-eslint/no-extra-semi": "warn",
+		"react/prop-types": "off",
+		"react/jsx-key": "warn",
+		"@typescript-eslint/no-non-null-asserted-optional-chain": "warn",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/no-inferrable-types": "warn",
+		"no-empty": "warn",
+		"@typescript-eslint/no-var-requires": "warn",
+		"@typescript-eslint/ban-types": "warn",
+		"no-var": "warn",
+		"no-useless-escape": "warn",
+		"no-async-promise-executor": "warn",
+		"@typescript-eslint/no-empty-interface": "warn",
+		"no-case-declarations": "off",
+		"linebreak-style": ["warn", "unix"],
+		"semi": ["warn", "always"],
+		"no-debugger": ["warn"]
+	}
+}
