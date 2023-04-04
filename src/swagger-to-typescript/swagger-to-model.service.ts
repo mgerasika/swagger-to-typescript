@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
+import { capitalize } from '../utils/capitalize.util';
+import { getMethodNameFromUrl } from '../utils/get-method-name-from-url.util';
+
 export interface ISwaggerDoc {
     title?: string;
     methods: ISwaggerMethod[];
@@ -81,7 +84,7 @@ export const getMethods = (source: any, models: ISwaggerModel[]): ISwaggerMethod
 
             return Object.keys(path).map((httpMethod: string) => {
                 const content = path[httpMethod];
-                const methodName = getMethodName(key, httpMethod);
+                const methodName = getMethodNameFromUrl(key, httpMethod);
                 return {
                     name: methodName,
                     errorResponseTypeName: 'T' + capitalize(`${methodName}Error`),
@@ -198,27 +201,6 @@ const getPropertyModel = (root: any, propertySchema: any, propertyKey: string): 
         return getModel(root, subSchema, name);
     }
     return undefined;
-};
-
-const capitalize = (s: string): string => {
-    if (typeof s !== 'string') {
-        return '';
-    }
-    return s.charAt(0).toUpperCase() + s.slice(1);
-};
-
-export const getMethodName = (path: string, httpMethod: string): string => {
-    return `${path}-${httpMethod}`
-        .split(/[-/]/g)
-        .map((f) => (f.indexOf('{') === -1 ? f : 'id'))
-        .join('/')
-        .replace(/[^a-zA-Z0-9]/g, '-')
-        .split('-')
-        .filter((f) => f !== '-')
-        .filter((s) => s !== 'api')
-        .filter((s) => s !== 'chargebee')
-        .map((s, index) => (index > 1 ? capitalize(s) : s.toLowerCase()))
-        .join('');
 };
 
 const getMethodParameters = (methodName: string, content: any): ISwaggerMethodParameter[] | undefined => {

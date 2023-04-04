@@ -1,4 +1,4 @@
-import { StringBuilder } from './string-builder';
+import { StringBuilder } from '../utils/string-builder';
 import { ISwaggerDoc, ISwaggerMethod, ISwaggerModel, ISwaggerProperty } from './swagger-to-model.service';
 
 export const swaggerToTypescript = (doc: ISwaggerDoc): string => {
