@@ -1,5 +1,5 @@
-export interface CustomAxiosResponse<T, TError> {
-    data: T;
+export interface CustomAxiosResponse<TSuccess, TError> {
+    data: TSuccess;
     status: number;
     statusText: string;
     error?: TError;
