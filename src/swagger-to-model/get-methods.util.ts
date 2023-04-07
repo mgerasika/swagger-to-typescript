@@ -1,11 +1,10 @@
-import { ISwaggerMethodReturn } from "@src/interfaces/swagger-method-return.interface";
-import { ISwaggerMethod } from "@src/interfaces/swagger-method.interface";
-import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
-import { capitalize } from "@src/utils/capitalize.util";
-import { getMethodNameFromUrl } from "@src/utils/get-method-name-from-url.util";
+import { ISwaggerMethodReturn } from "../interfaces/swagger-method-return.interface";
+import { ISwaggerMethod } from "../interfaces/swagger-method.interface";
+import { ISwaggerModel } from "../interfaces/swagger-model.interface";
+import { capitalize } from "../utils/capitalize.util";
+import { getMethodNameFromUrl } from "../utils/get-method-name-from-url.util";
 import { getMethodParameters } from "./get-method-parameters.util";
 import { getSwaggerMethodReturn } from "./get-swagger-method-return.util";
-
 
 export const getMethods = (
   source: any,

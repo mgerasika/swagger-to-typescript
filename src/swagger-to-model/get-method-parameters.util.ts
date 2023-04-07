@@ -1,7 +1,6 @@
-import { ISwaggerMethodParameter } from "@src/interfaces/swagger-method-parameter.interface";
-import { capitalize } from "@src/utils/capitalize.util";
+import { ISwaggerMethodParameter } from "../interfaces/swagger-method-parameter.interface";
+import { capitalize } from "../utils/capitalize.util";
 import { getPropertyModel } from "./get-property-model.util";
-
 
 export const getMethodParameters = (
   methodName: string,

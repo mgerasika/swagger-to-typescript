@@ -1,6 +1,6 @@
-import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
-import { ISwaggerProperty } from "@src/interfaces/swagger-property.interface";
-import { StringBuilder } from "@src/utils/string-builder";
+import { ISwaggerModel } from "../interfaces/swagger-model.interface";
+import { ISwaggerProperty } from "../interfaces/swagger-property.interface";
+import { StringBuilder } from "../utils/string-builder";
 import { generateModelProperties } from "./generate-model-properties.util";
 
 export const getArrayStr = (

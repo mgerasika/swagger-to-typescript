@@ -1,5 +1,5 @@
-import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
-import { StringBuilder } from "@src/utils/string-builder";
+import { ISwaggerModel } from "../interfaces/swagger-model.interface";
+import { StringBuilder } from "../utils/string-builder";
 
 export const generateEnums = (
   model: ISwaggerModel,

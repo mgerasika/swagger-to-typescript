@@ -1,6 +1,6 @@
-import { ISwaggerDoc } from "@src/interfaces/swagger-doc.interface";
-import { ISwaggerMethod } from "@src/interfaces/swagger-method.interface";
-import { StringBuilder } from "@src/utils/string-builder";
+import { ISwaggerDoc } from "../interfaces/swagger-doc.interface";
+import { ISwaggerMethod } from "../interfaces/swagger-method.interface";
+import { StringBuilder } from "../utils/string-builder";
 import { getArrayStr } from "./generate-array-str.util";
 
 export const generateMethod = (

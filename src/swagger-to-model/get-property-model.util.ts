@@ -1,4 +1,5 @@
-import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { ISwaggerModel } from "../interfaces/swagger-model.interface";
 import { getModel } from "./get-model.util";
 
 export const getPropertyModel = (

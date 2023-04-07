@@ -20,10 +20,10 @@
     "declarationDir": "dist/types",
     "sourceMap": true,
     "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "@src/*": ["src/*"]
-    }
+    "baseUrl": "."
+    // "paths": {
+    //   "../*": ["src/*"]
+    // }
   },
   "include": ["src"],
   "exclude": ["node_modules"]

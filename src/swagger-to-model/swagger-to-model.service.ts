@@ -1,4 +1,4 @@
-import { ISwaggerDoc } from "@src/interfaces/swagger-doc.interface";
+import { ISwaggerDoc } from "../interfaces/swagger-doc.interface";
 import { getMethods } from "./get-methods.util";
 import { getModels } from "./get-models.util";
 
