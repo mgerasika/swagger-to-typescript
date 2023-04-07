@@ -1,41 +1,14 @@
-## Find all interfaces into project directory and return information about it.
+## Generate typescript code from swagger spec.
+![image](https://user-images.githubusercontent.com/10614750/230363977-89f3c28b-d8b8-4628-be68-f006762b1ebc.png)
 
-### Example Interface
 
+### Example
 ```
-interface IUser {
-	firstName: string;
-	isActive: boolean;
+const res = fs.readFileSync("../spec.json").toString();
+const doc = getDoc(JSON.parse(res));
+if (!doc) {
+  throw "Document cannot be null";
 }
-```
-
-### Usage example
-
-```
-getInterfaceInfo({ dir: ['./src'] }).then((res) => {
-    console.log(JSON.stringify(res.interfaces, null, 2));
-});
-```
-
-### Response
-
-```
-[...
-	{
-		"name": "IUserDto",
-		"type": "interface",
-		"path": "./src/model/user.dto.ts",
-		"properties": [
-			{
-				"name": "firstName",
-				"type": "string"
-			},
-			{
-				"name": "isActive",
-				"type": "boolean"
-			}
-		]
-	},
-...
-]
+const tsCode = swaggerToTypescript(doc);
+writeTsToFile(`src/api.generated.ts`, tsCode);
 ```

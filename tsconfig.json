@@ -19,7 +19,8 @@
     "declaration": true,
     "declarationDir": "dist/types",
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": "."
   },
   "include": ["src"],
   "exclude": ["node_modules"]
