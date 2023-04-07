@@ -1,6 +1,7 @@
-import { ISwaggerModel } from "src/interfaces/swagger-model.interface";
-import { capitalize } from "src/utils/capitalize.util";
+import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
+import { capitalize } from "@src/utils/capitalize.util";
 import { getPropertyModel } from "./get-property-model.util";
+
 
 export const getModel = (
   root: any,

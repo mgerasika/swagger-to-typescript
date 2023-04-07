@@ -1,4 +1,4 @@
-import { ISwaggerModel } from "src/interfaces/swagger-model.interface";
+import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
 import { getModel } from "./get-model.util";
 
 export const getPropertyModel = (

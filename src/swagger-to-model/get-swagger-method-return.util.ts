@@ -1,5 +1,5 @@
-import { ISwaggerMethodReturn } from "src/interfaces/swagger-method-return.interface";
-import { ISwaggerModel } from "src/interfaces/swagger-model.interface";
+import { ISwaggerMethodReturn } from "@src/interfaces/swagger-method-return.interface";
+import { ISwaggerModel } from "@src/interfaces/swagger-model.interface";
 
 export const getSwaggerMethodReturn = (
   content: any,
