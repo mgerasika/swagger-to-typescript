@@ -1,4 +1,4 @@
-import { ISwaggerDoc } from "src/interfaces/swagger-doc.interface";
+import { ISwaggerDoc } from "../interfaces/swagger-doc.interface";
 import { StringBuilder } from "../utils/string-builder";
 import { generateEnums } from "./generate-enums.util";
 import { generateErrorCodes } from "./generate-error-codes.util";

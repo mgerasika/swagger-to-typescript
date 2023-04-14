@@ -23,7 +23,7 @@ export const getModel = (
     name: key
       ? schema.enum
         ? (key.toLowerCase().startsWith("e") ? "" : "E") + capitalize(key)
-        : "I" + capitalize(key)
+        : `${key.toUpperCase().startsWith("I") ? "" : "I"}` + capitalize(key)
       : "",
     originalName: key,
     type: schema.type,

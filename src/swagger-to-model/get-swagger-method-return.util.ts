@@ -12,6 +12,9 @@ export const getSwaggerMethodReturn = (
 
   if (schema?.type === "array") {
     const res = models.find((x) => x.schema === schema?.items["$ref"]);
+    if (res == null) {
+      throw `Array model not found ${schema?.items["$ref"]}`;
+    }
     return {
       isArray: true,
       model: res,
