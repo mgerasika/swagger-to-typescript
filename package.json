@@ -1,7 +1,8 @@
 {
   "name": "swagger-to-typescript2",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": false,
+  "type": "commonjs",
   "main": "dist/cjs/index.js",
   "files": [
     "dist"
