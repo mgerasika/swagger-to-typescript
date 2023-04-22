@@ -28,7 +28,7 @@ export default [
 
 		],
 		plugins: [
-			aliasFn({ resolve: ['.ts', '.tsx', '.svg'], entries: [{ find: /^@src\//, replacement: '/src/' }] }),
+			aliasFn({ resolve: ['.ts', '.tsx', '.svg'] }),
 			peerDepsExternal(),
 			resolve({
 				extensions: config.extensions,
