@@ -11,7 +11,6 @@ var os = require('os');
 var path = require('path');
 const { posix } = require('path');
 const { platform } = require('os');
-var path__default = _interopDefault(path);
 var slash = _interopDefault(require('slash'));
 
 const VOLUME = /^([A-Z]:)/i;
