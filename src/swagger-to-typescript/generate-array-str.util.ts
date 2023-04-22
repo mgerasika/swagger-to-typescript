@@ -1,5 +1,7 @@
-import { ISwaggerModel } from "../interfaces/swagger-model.interface";
-import { ISwaggerProperty } from "../interfaces/swagger-property.interface";
+import {
+  ISwaggerModel,
+  ISwaggerProperty,
+} from "../interfaces/swagger-model.interface";
 import { StringBuilder } from "../utils/string-builder";
 import { generateModelProperties } from "./generate-model-properties.util";
 

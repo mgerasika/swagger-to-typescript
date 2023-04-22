@@ -1,5 +1,3 @@
-import { ISwaggerProperty } from "./swagger-property.interface";
-
 export interface ISwaggerModel {
   name: string;
   originalName: string;
@@ -8,4 +6,11 @@ export interface ISwaggerModel {
   enum?: string[];
   schema?: string;
   arrayItemModel?: ISwaggerModel | undefined;
+}
+
+export interface ISwaggerProperty {
+  name: string;
+  type: string;
+  required?: boolean;
+  subModel?: ISwaggerModel;
 }

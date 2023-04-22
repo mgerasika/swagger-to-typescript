@@ -1,4 +1,4 @@
-import { ISwaggerProperty } from "../interfaces/swagger-property.interface";
+import { ISwaggerProperty } from "src/interfaces/swagger-model.interface";
 import { StringBuilder } from "../utils/string-builder";
 import { escapeName } from "./escape-name.util";
 import { getPropertyTypeStr } from "./generate-property-str.util";
