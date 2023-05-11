@@ -44,8 +44,7 @@
     "stylelint:fix": "stylelint **/*.scss --fix",
     "lint": "tsc --noEmit && eslint 'src/**/*.{js,ts,tsx}'",
     "lint:fix": "tsc --noEmit && eslint --fix 'src/**/*.{js,ts,tsx}'",
-    "test": "jest --config=jest.config.js",
-    "pub": "yarn build && npm version patch && npm publish"
+    "test": "jest --config=jest.config.js"
   },
   "husky": {
     "hooks": {
