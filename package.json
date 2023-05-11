@@ -48,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": ""
+      "pre-commit": "yarn lint"
     }
   },
   "author": "Mykhaylo Gerasika <mgerasika@gmail.com>",
