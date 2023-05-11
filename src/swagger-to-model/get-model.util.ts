@@ -3,7 +3,9 @@ import { capitalize } from "../utils/capitalize.util";
 import { getPropertyModel } from "./get-property-model.util";
 
 export const getModel = (
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   root: any,
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   schema: any,
   key: string
 ): ISwaggerModel => {

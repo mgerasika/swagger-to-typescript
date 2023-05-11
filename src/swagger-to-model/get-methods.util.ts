@@ -7,6 +7,7 @@ import { getMethodParameters } from "./get-method-parameters.util";
 import { getSwaggerMethodReturn } from "./get-swagger-method-return.util";
 
 export const getMethods = (
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   source: any,
   models: ISwaggerModel[]
 ): ISwaggerMethod[] => {

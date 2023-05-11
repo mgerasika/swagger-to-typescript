@@ -4,6 +4,7 @@ import { getPropertyModel } from "./get-property-model.util";
 
 export const getMethodParameters = (
   methodName: string,
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   content: any
 ): ISwaggerMethodParameter[] | undefined => {
   return content.parameters
