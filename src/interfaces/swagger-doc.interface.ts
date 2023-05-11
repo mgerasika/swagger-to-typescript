@@ -1,8 +1,8 @@
-import { ISwaggerMethod } from "./swagger-method.interface";
-import { ISwaggerModel } from "./swagger-model.interface";
+import { ISwaggerMethod } from './swagger-method.interface';
+import { ISwaggerModel } from './swagger-model.interface';
 
 export interface ISwaggerDoc {
-  title?: string;
-  methods: ISwaggerMethod[];
-  models: ISwaggerModel[];
+    title?: string;
+    methods: ISwaggerMethod[];
+    models: ISwaggerModel[];
 }

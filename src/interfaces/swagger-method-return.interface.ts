@@ -1,7 +1,7 @@
-import { ISwaggerModel } from "./swagger-model.interface";
+import { ISwaggerModel } from './swagger-model.interface';
 
 export interface ISwaggerMethodReturn {
-  isArray: boolean;
-  status: string | undefined;
-  model: ISwaggerModel | undefined;
+    isArray: boolean;
+    status: string | undefined;
+    model: ISwaggerModel | undefined;
 }

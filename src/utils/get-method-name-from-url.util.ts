@@ -1,4 +1,4 @@
-import { capitalize } from "./capitalize.util";
+import { capitalize } from './capitalize.util';
 
 export const getMethodNameFromUrl = (path: string, httpMethod: string): string => {
     return `${path}-${httpMethod}`

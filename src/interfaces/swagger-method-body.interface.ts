@@ -1,6 +1,6 @@
-import { ISwaggerModel } from "./swagger-model.interface";
+import { ISwaggerModel } from './swagger-model.interface';
 
 export interface ISwaggerMethodBody {
-  required: boolean;
-  model?: ISwaggerModel;
+    required: boolean;
+    model?: ISwaggerModel;
 }
