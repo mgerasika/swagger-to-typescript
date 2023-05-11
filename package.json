@@ -50,11 +50,6 @@
 	  	"prettier": "prettier --config ./.prettierrc.js --check \"src/**/*{.ts,.tsx,*.js,*.json.*.babelrc}\" ",
         "prettier:fix": "npm run prettier -- --write"
     },
-    "husky": {
-        "hooks": {
-            "pre-commit": "yarn lint-staged"
-        }
-    },
     "lint-staged": {
         "**/*.{ts,tsx,js}": [
             "npm run lint:fix",
